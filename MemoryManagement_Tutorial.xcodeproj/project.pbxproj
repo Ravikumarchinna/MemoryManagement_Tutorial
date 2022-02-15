@@ -16,6 +16,7 @@
 		DBB972272785A6820086FCD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB972252785A6820086FCD9 /* LaunchScreen.storyboard */; };
 		DBB972322785A6820086FCD9 /* MemoryManagement_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB972312785A6820086FCD9 /* MemoryManagement_TutorialTests.swift */; };
 		DBB9723D2785A6830086FCD9 /* MemoryManagement_TutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9723C2785A6830086FCD9 /* MemoryManagement_TutorialUITests.swift */; };
+		DBE771E627BB1DB700895107 /* CloseresMemoryRelease_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE771E527BB1DB700895107 /* CloseresMemoryRelease_VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB015A1427B82577003BD8E0 /* ValueTypeandReferenceType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ValueTypeandReferenceType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DBB972142785A67F0086FCD9 /* MemoryManagement_Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryManagement_Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB972172785A67F0086FCD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB972192785A67F0086FCD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		DBB972382785A6820086FCD9 /* MemoryManagement_TutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryManagement_TutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB9723C2785A6830086FCD9 /* MemoryManagement_TutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryManagement_TutorialUITests.swift; sourceTree = "<group>"; };
 		DBB9723E2785A6830086FCD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBE771E527BB1DB700895107 /* CloseresMemoryRelease_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseresMemoryRelease_VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				DBB972172785A67F0086FCD9 /* AppDelegate.swift */,
 				DBB972192785A67F0086FCD9 /* SceneDelegate.swift */,
 				DBB9721B2785A67F0086FCD9 /* ViewController.swift */,
+				DBE771E527BB1DB700895107 /* CloseresMemoryRelease_VC.swift */,
+				DB015A1427B82577003BD8E0 /* ValueTypeandReferenceType.playground */,
 				DBB9721D2785A67F0086FCD9 /* Main.storyboard */,
 				DBB972232785A6820086FCD9 /* Assets.xcassets */,
 				DBB972252785A6820086FCD9 /* LaunchScreen.storyboard */,
@@ -262,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBB9721C2785A67F0086FCD9 /* ViewController.swift in Sources */,
+				DBE771E627BB1DB700895107 /* CloseresMemoryRelease_VC.swift in Sources */,
 				DBB972182785A67F0086FCD9 /* AppDelegate.swift in Sources */,
 				DBB9721A2785A67F0086FCD9 /* SceneDelegate.swift in Sources */,
 				DBB972222785A67F0086FCD9 /* MemoryManagement_Tutorial.xcdatamodeld in Sources */,

@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "CEF9F42D-03C9-4773-B551-7179CE0C0B73",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MemoryManagement_Tutorial.xcodeproj",
+        "identifier" : "DBB9722C2785A6820086FCD9",
+        "name" : "MemoryManagement_TutorialTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MemoryManagement_Tutorial.xcodeproj",
+        "identifier" : "DBB972372785A6820086FCD9",
+        "name" : "MemoryManagement_TutorialUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

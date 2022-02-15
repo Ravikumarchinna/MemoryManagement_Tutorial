@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "CE86B327-F508-45B0-8CED-83E1D2F7EBF9",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MemoryManagement_Tutorial.xcodeproj",
+        "identifier" : "DBB9722C2785A6820086FCD9",
+        "name" : "MemoryManagement_TutorialTests"
+      }
+    }
+  ],
+  "version" : 1
+}
