@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func btn_sendNotifiAction(_ sender: Any) {
-        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "UpdateAccepted"), object: self)
+
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let closureVC = storyboard.instantiateViewController(identifier: "CloseresMemoryRelease_VC") as! CloseresMemoryRelease_VC
         self.navigationController?.pushViewController(closureVC, animated: true)
@@ -25,7 +26,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
+
         //... Start Value Type
         var firstName = "Kumar"
         let lastName = "Kumar"
@@ -66,15 +67,13 @@ class ViewController: UIViewController {
         joe = nil
         dev = nil
         
-        
-        //... NotificationCenter memory problems
-        NotificationCenter.default.post(name: Notification.Name("sampleNotify"), object: nil)
-
-        
-        
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 }
+
 
 //...Start Removing memory from Child and Parent classes
 //...With no strong reference
