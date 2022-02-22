@@ -7,6 +7,53 @@
 
 import Foundation
 
-protocol PopupDelegate {
-    func popupValueSelected(value:String)
+protocol PopupDelegate:AnyObject {
+    func popupValueSelected(value:String);
+    func someExtraStuff(value1:String)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

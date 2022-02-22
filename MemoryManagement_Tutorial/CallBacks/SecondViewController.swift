@@ -9,31 +9,29 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    
     @IBOutlet weak var lbl_selctedLabel: UILabel!
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
+    weak var popup:DatePopupViewController?
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "toPopupVC" {
-            let popup = segue.destination as! DatePopupViewController
-            popup.showTimePicker = false
+            popup = segue.destination as? DatePopupViewController
+            popup?.showTimePicker = false
             //...WAY:: 1  Callbacks way of accessing the data
           //  popup.onSave = onSave(_:)
             
             //...WAY:: 2 Using closures to get the data
-            popup.onSave = {(data:String) in
+            popup?.onSave = {(data:String) in
                 self.lbl_selctedLabel.text = data
             }
             
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
     }
     
     //...WAY:: 1  Callbacks way of accessing the data

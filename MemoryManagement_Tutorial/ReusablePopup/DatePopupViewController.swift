@@ -18,7 +18,7 @@ class DatePopupViewController: UIViewController {
     var data:Date?
     
     var onSave:((_ date:String)->())?
-    var deleagte:PopupDelegate?
+    weak var deleagte:PopupDelegate?
     
     
     
@@ -72,7 +72,9 @@ class DatePopupViewController: UIViewController {
         dismiss(animated: true)
     }
     
-    
+    deinit {
+        print("Datepopviewcontroller memory released ")
+    }
     
     
     

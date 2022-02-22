@@ -17,7 +17,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
 
 
-      
+
         
     }
     
@@ -46,7 +46,7 @@ class FirstViewController: UIViewController {
     var observer:NSObjectProtocol?
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        observer =   NotificationCenter.default.addObserver(forName: .savedDateTime, object: nil, queue: OperationQueue.main) { (notification) in
+        observer =   NotificationCenter.default.addObserver(forName: .savedDateTime, object: nil, queue: OperationQueue.main) {[unowned self] (notification) in
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             let myStringDate = formatter.string(from: notification.object as! Date)
@@ -71,6 +71,11 @@ class FirstViewController: UIViewController {
             popup.showTimePicker = false
         }
     }
+    
+    deinit {
+        print("Notification VC is Released from memory")
+    }
+    
 
 }
 
