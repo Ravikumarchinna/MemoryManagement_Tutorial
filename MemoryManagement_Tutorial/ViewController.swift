@@ -35,6 +35,25 @@ class ViewController: UIViewController {
         firstName = "Ravikumar"
         //... End Value Type
         
+        //... Reference type memory identifying , only single reference will point back to the all which are accessing from this
+        //        var myint = MyInt()
+        //        print(" \(myint.int)")
+        //        var myint1 = myint
+        //        myint1.int = 4
+        //        print("\(myint1.int)")
+        //        print(" \(myint.int)")
+        //
+        //... Value Type memory finding
+        //        var str = "name"
+        //        var lastname = str
+        //        lastname = "kumar"
+        //
+        //        print("\(str)")
+        //        print("\(lastname)")
+        
+        
+        
+        
         lbl_Name.text = "Ravikumar"
         
         
